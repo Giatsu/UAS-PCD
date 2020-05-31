@@ -139,7 +139,7 @@ area_cluster2 = sum(find(pixel_labels==2));
  
 Img_bw = (pixel_labels==cluster_min);
 Img_bw = imfill(Img_bw,'holes');
-Img_bw = bwareaopen(Img_bw,20);
+Img_bw = bwareaopen(Img_bw,25);
  
 mobil = Img;
 R = mobil(:,:,1);
